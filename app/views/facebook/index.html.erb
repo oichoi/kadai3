@@ -1,0 +1,10 @@
+<h1>Facebook#index</h1>
+<p>Find me in app/views/facebook/index.html.erb</p>
+<% @users.each do |user| %>
+  <%= user.id %><br />
+  <%= user.name %><br />
+  <%= user.encrypted_password %><br />
+  <%= user.uid %><br />
+  <%= user.provider %><br />
+  <%= user.email %><br />
+<% end %>
